@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import argparse
 import boto3
 from botocore import UNSIGNED
@@ -19,4 +19,4 @@ aws = AWSSRP(username=args.username, password=args.password, pool_id=args.user_p
 tokens = aws.authenticate_user()
 
 id_token = tokens['AuthenticationResult']['IdToken']
-print id_token
+print(id_token)
